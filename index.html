@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥Random Color Change</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav><h2>Random Color Change 🔥</h2></nav>
+      <h1 id="h1" onclick="copyValue()">Color</h1>
+      <input type="color" name="" id="inputBox" />
+
+      <button onclick="changeBg()">Change bgColor 🚀</button>
+    </main>
+    <footer>
+      <h1>
+        Made by
+        <a href="https://github.com/Shah-Hussain-Dev"> Shah Hussain ❤</a>
+      </h1>
+    </footer>
+    <script>
+      function changeBg() {
+        var input = document.getElementById("inputBox").value;
+        var h1 = document.getElementById("h1");
+        console.log(input);
+        document.body.style.background = input;
+        h1.innerHTML = input;
+      }
+    </script>
+  </body>
+</html>
